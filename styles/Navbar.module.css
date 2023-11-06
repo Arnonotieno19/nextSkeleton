@@ -1,7 +1,29 @@
+.logo{
+  margin-left: 10vw;
+  
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 75px;
+  
+}
+
+.logoImage {
+  width: auto;
+  height: 60px;
+  
+}
+
 .navbar {
     list-style: none;
     display: flex;
     padding: 0;
+    gap: 5px;
+    margin-right: 10vw;
   }
   
   .navItem {
@@ -11,44 +33,101 @@
 
   .navElement{
     background-color: #fff;
+    color: rgb(66, 66, 66);
     width: 100px;
-    height: 30px;
-    /* border: 1px solid #0f0e0e; */
+    height: 35px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 0px 5px 0 0;
     justify-content: center;
     align-items: center;
-    margin: 1em;
     text-decoration: none;
     position: relative;
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
-    transition:         0.08s ease-in;
-      -o-transition:      0.08s ease-in;
-      -ms-transition:     0.08s ease-in;
-      -moz-transition:    0.08s ease-in;
-      -webkit-transition: 0.08s ease-in;
+    transition:         0.20s ease-in;
+      -o-transition:      0.20s ease-in;
+      -ms-transition:     0.20s ease-in;
+      -moz-transition:    0.20s ease-in;
+      -webkit-transition: 0.20s ease-in;
 
   }
 
   .navElement:hover{
-    color:#ff6a00;
+    color: white;
+  }
+
+  .submenu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 5px;
+    z-index: 1;  
+    gap: 1px; 
+    width: 170px;
+  }
+
+  .submenLink{
+    text-decoration: none;
+    color: rgb(53, 50, 50);
+    width: 100%;  
+  }
+
+  .submenuItem:hover {
+    background-color: #00d2d1;
+    color: white;
+    
+  }
+
+  .submenuItem{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;   
   }
 
   .navElement:before {
     content: "";
     position: absolute;
-    background: #383736;
+    background: #00d2d1;
     bottom: 0;
     left: 0;
     right: 0;
     top: 100%;
     z-index: -1;
-    -webkit-transition: top 0.09s ease-in;
+    -webkit-transition: top 0.2s ease-in;
   }
   
   .navElement:hover:before {
     top: 0;
+  }
+
+  @media screen and (max-width:450px) {
+    .container{
+      /* width: 100%; */
+      padding-left: 0;
+      height: 70px;
+      /* background-color: rgb(155, 57, 57); */
+    }
+
+    .logo{
+      margin-left: 5px;
+    }
+
+    .menuHolder{
+      margin-right: 10px;
+
+    }
+
+    .menu{
+      /* font-size: 24px; */
+      width: 30px;
+      height: 28px;
+      color: #00d2d1;
+    }
+        
   }
   

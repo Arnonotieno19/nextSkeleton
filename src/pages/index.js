@@ -1,8 +1,11 @@
 import React from 'react'
+import MainHero from '@/components/MainHero'
 
 const Homepage = () => {
   return (
-    <div>Welcome To my Homepage</div>
+    <div>
+      <MainHero/>
+    </div>
   )
 }
 

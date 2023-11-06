@@ -1,0 +1,22 @@
+.carousel{
+    height: 80vh;
+    background-color: #f0f0f0;
+    
+}
+
+.carouselItem{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+   
+}
+
+.carouselImage {
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+.captionHolder{
+    background-color: rgba(29, 192, 192, 0.15);  
+    backdrop-filter: blur(5px);
+}
