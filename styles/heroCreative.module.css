@@ -28,7 +28,7 @@
     width: 35%;
     display: flex;
     flex-wrap: wrap;
-    gap:10px
+    gap:5px;
 }
 .contextH1{
     color: #2d5477;

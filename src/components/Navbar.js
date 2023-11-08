@@ -76,9 +76,9 @@ const Navbar = () => {
               <li className={styles.navItem}>
               <Link className={styles.navElement} href="/">Home</Link>
             </li>
-            <li className={styles.navItem}>
+            {/* <li className={styles.navItem}>
               <Link className={styles.navElement} href="/about">About</Link>
-            </li>
+            </li> */}
             <li className={styles.navItem}>
               <div
                 className={styles.navElement}

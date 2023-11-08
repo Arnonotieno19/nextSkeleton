@@ -1,11 +1,51 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from '../../styles/heroCreative.module.css'
 import { creativeshuffle } from '@/utils/creativeShuffle'
 import Image from 'next/image'
+import { motion } from "framer-motion";
 
 
 const HeroCreative = () => {
-  return (
+
+  const shuffle = (array) => {
+    let currentIndex = array.length,
+      randomIndex;
+  
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ];
+    }
+  
+    return array;
+  };
+
+  const generateSquares = () => {
+    return shuffle(creativeshuffle).map((item, id) => (
+      <></>
+    ));
+  };
+
+  const timeoutRef = useRef(null);
+  const [squares, setSquares] = useState(generateSquares());
+
+  useEffect(() => {
+    shuffleSquares();
+
+    return () => clearTimeout(timeoutRef.current);
+  }, []);
+
+  const shuffleSquares = () => {
+    setSquares(generateSquares());
+
+    timeoutRef.current = setTimeout(shuffleSquares, 3000);
+  };
+
+return (
     <div className={styles.container}>
       <div className={styles.contentTextHolder}>
         <h2 className={styles.contextH1}>We do better everyday</h2>
@@ -25,11 +65,39 @@ const HeroCreative = () => {
       </div>
       <div className={styles.imageShuffleHolder}>
         {creativeshuffle.map((item, id)=>(
-          <Image key={id} src={item.img} alt="Africom"  className={styles.creativeImage}/>
-        ))}
+          <motion.div 
+              key={id}
+              layout 
+              transition={{ duration: 5.5, type: "spring" }}
+              // className={styles.creativeImage}
+              animate={{ x: 31 }}
+              style={{ background: `url(${item.img})`, backgroundSize: 'cover', height:'110px', width:'135px' }}
+          >
+            <Image  src={item.img} alt="Africom"  className={styles.creativeImage}/>
+          </motion.div>
+          ))} 
       </div>
     </div>
   )
 }
 
 export default HeroCreative
+
+{/* {creativeshuffle.map((item, id)=>(
+          <Image key={id} src={item.img} alt="Africom"  className={styles.creativeImage}/>
+        ))} */}
+
+      //   <div className={styles.creativeImage}>
+      //     {squares.map((sq) => sq)}
+      // </div>
+
+        // <motion.div
+      //   key={id}
+      //   layout
+      //   transition={{ duration: 1.5, type: "spring" }}
+      //   className={styles.creativeImage}
+      //   style={{
+      //     backgroundImage: `url(${item.img})`,
+      //     backgroundSize: "cover",
+      //   }}
+      // ></motion.div>
