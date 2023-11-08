@@ -1,0 +1,65 @@
+/* Fintech.css */
+
+.bottomcontainer {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/body.jpeg');
+    height: calc(55vh - 80px);
+    padding: 0 15%;
+    margin-top: 2%;
+  
+   
+  }
+  
+  .bottomcontent {
+    height: 100%;
+  }
+  
+  .bottomitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    line-height: 1;
+  }
+  
+  .bottomh2 {
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+
+  }
+
+
+  
+  .forward {
+    display: inline-block;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    filter: blur(8px);
+  }
+  
+  .bottomp {
+    font-size: 30px;
+    letter-spacing: 12px;
+  
+  
+  }
+
+
+  @media screen and (max-width: 960px) {
+    .bottomcontainer {
+        padding: 0 2.5%;
+    }
+    
+    .bottomh2 {
+        font-size: 16px;
+    }
+
+    .bottomp {
+        font-size: 36px;
+    }
+}
+  
