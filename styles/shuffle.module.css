@@ -1,0 +1,14 @@
+.shuffleHolder{
+    width: 130px;
+    height: 100px;
+    object-fit: cover;    
+}
+
+.creativeImage{
+    object-fit:cover;
+    width: 130px;
+    height: 100px;
+    
+}
+
+/* "grid grid-cols-4 grid-rows-4 h-[450px] gap-1" */

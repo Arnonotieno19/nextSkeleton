@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-// import { creativeshuffle } from '@/utils/creativeShuffle';
 import { motion } from 'framer-motion';
 import pic1 from '../assets/creative/1.png'
 import pic2 from '../assets/creative/2.png'
@@ -14,6 +13,8 @@ import pic10 from '../assets/creative/10.jpg'
 import pic11 from '../assets/creative/11.jpg'
 import pic12 from '../assets/creative/12.jpg'
 import pic13 from '../assets/creative/13.jpg'
+import styles from  '../../styles/shuffle.module.css'
+import Image from 'next/image';
 
 
 const shuffle = (array) => {
@@ -88,37 +89,18 @@ const creativeshuffle =[
 ]
 
 
-const squareStyle = {
-  width: '25%',
-  height: '25%',
-  display: 'inline-block',
-  margin: '0',
-  padding: '0',
-};
-
-const gridContainerStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr)',
-  gridTemplateRows: 'repeat(4, 1fr)',
-  height: '450px',
-  gap: '1rem',
-};
-
-
 const generateSquares = () => {
-  const shuffledSquares = shuffle(creativeshuffle);
-  console.log('Shuffled Squares:', shuffledSquares);
-  return shuffle(creativeshuffle).map((item) => (
+  return shuffle(creativeshuffle).map((content, id) => (
     <motion.div
-      key={item.id}
+      key={content.id}
       layout
       transition={{ duration: 1.5, type: 'spring' }}
+      className={styles.shuffleHolder}
       style={{
-        ...squareStyle,
-        backgroundImage: `url(${item.img})`,
-        backgroundSize: 'cover',
+      
+        backgroundSize: "cover",
       }}
-    ></motion.div>
+    ><Image key={id} src={content.img} alt="Africom"  className={styles.creativeImage}/></motion.div>
   ));
 };
 
@@ -140,10 +122,28 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div style={gridContainerStyle}>
-      {squares.map((sq) => sq)}
+    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+      {squares.map((content) => content)}
     </div>
   );
 };
 
 export default ShuffleGrid;
+
+
+
+const squareStyle = {
+  width: '25%',
+  height: '25%',
+  display: 'inline-block',
+  margin: '0',
+  padding: '0',
+};
+
+const gridContainerStyle = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(4, 1fr)',
+  gridTemplateRows: 'repeat(4, 1fr)',
+  height: '450px',
+  gap: '1rem',
+};

@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
 import React, { useState, useEffect, useRef } from 'react'
 import styles from '../../styles/heroCreative.module.css'
-import { creativeshuffle } from '@/utils/creativeShuffle'
+import { creativeshuffle } from '../utils/creativeShuffle'
 import Image from 'next/image'
-import { motion } from "framer-motion";
+import ShuffleGrid from "../utils/Shuffle";
+
 
 
 const HeroCreative = () => {
@@ -64,19 +66,18 @@ return (
         <span className={styles.learnMore}>Contact us</span>
       </div>
       <div className={styles.imageShuffleHolder}>
-        {creativeshuffle.map((item, id)=>(
-          <motion.div 
-              key={id}
-              layout 
-              transition={{ duration: 5.5, type: "spring" }}
-              // className={styles.creativeImage}
-              animate={{ x: 31 }}
-              style={{ background: `url(${item.img})`, backgroundSize: 'cover', height:'110px', width:'135px' }}
-          >
-            <Image  src={item.img} alt="Africom"  className={styles.creativeImage}/>
-          </motion.div>
-          ))} 
+        <ShuffleGrid  />
       </div>
+      {/* <div className={styles.imageShuffleHolder}>
+        {creativeshuffle.map((item, id)=>(
+          <div
+           key={id}
+           className={styles.creativeImage}
+           style={{ backgroundImage: `url(${item.img})` , border:'dotted 1px red'}}
+          >
+          </div>
+          ))} 
+      </div> */}
     </div>
   )
 }
@@ -101,3 +102,14 @@ export default HeroCreative
       //     backgroundSize: "cover",
       //   }}
       // ></motion.div>
+
+  //     <motion.div 
+  //     key={id}
+  //     layout 
+  //     transition={{ duration: 5.5, type: "spring" }}
+  //     // className={styles.creativeImage}
+  //     animate={{ x: 31 }}
+  //     style={{ background: `url(${item.img})`, backgroundSize: 'cover', height:'110px', width:'135px' }}
+  // >
+
+  // </motion.div>

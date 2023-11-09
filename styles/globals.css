@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,3 +12,4 @@ body {
 .carouselImage {
   object-fit: cover;
 }
+

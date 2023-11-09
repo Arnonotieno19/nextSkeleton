@@ -16,6 +16,35 @@
     object-fit:cover;
     width: 130px;
     height: 100px;
+    animation: shuffleAnimation 3s ease-in-out infinite;
+    
+}
+
+@keyframes shuffleAnimation {
+    0% {
+      transform: translateY(0) translateX(0) scale(1);
+      opacity: 0.5;
+    }
+    25% {
+      transform:  scale(0.95);
+      opacity: 1;
+    }
+    50% {
+      transform:  scale(0.95);
+      opacity: 1;
+    }
+    75% {
+      transform:  scale(0.95);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0) translateX(0) scale(1);
+      opacity: 0.5;
+    }
+  }
+
+.creativeImage:hover {
+    transform: scale(0.9);
 }
 
 .contentTextHolder{
@@ -25,10 +54,14 @@
 }
 
 .imageShuffleHolder{
-    width: 35%;
+    width: 30%;
+    height: 90%;
     display: flex;
-    flex-wrap: wrap;
+    /* margin-top: 6%; */
+        
+    /* flex-wrap: wrap; */
     gap:5px;
+
 }
 .contextH1{
     color: #2d5477;
