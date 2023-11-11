@@ -49,17 +49,31 @@
   }
 
 
-  @media screen and (max-width: 960px) {
+  @media screen and (min-width:700px) and (max-width: 900px){
     .bottomcontainer {
         padding: 0 2.5%;
+        height: calc(45vh - 80px);
     }
     
     .bottomh2 {
-        font-size: 16px;
+        font-size: 50px;
     }
 
     .bottomp {
         font-size: 36px;
     }
+}
+
+@media screen and (max-width:699px){
+  .bottomh2 {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width:320px){
+  .bottomh2 {
+    font-size: 20px;
+  }
 }
   

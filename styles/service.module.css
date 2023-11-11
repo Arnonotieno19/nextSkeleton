@@ -13,7 +13,8 @@
 
 .serviceContainer {
     width: 30%;
-    height: 220px;
+    height: 250px;
+    min-width: 300px;
     /* min-height: 150px; */
     /* float: left; */
     box-sizing: border-box;
@@ -92,6 +93,48 @@
     background-color: yellow;
     width: 65%;
 }
+
+@media screen and (min-width:700px) and (max-width: 900px){
+    .container{
+        padding-top: 5%;
+        
+    }
+    
+    .servicesWrapper{
+        width: 90%;
+        justify-content: center; 
+        padding-top: 2%;   
+    }
+
+    .mainServiceHeader{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:699px){
+    .container{
+        padding-top: 5%;
+        height: fit-content;
+    }
+
+    .servicesWrapper{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .serviceContainer{
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width:320px){
+    .container{
+        /* margin-top: 25vh; */
+    }
+}
+
+
 
 
 

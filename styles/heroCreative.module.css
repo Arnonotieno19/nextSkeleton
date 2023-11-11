@@ -1,5 +1,5 @@
 .container{
-    height: 40vh;
+    height: 370px;
     /* background-color: orange; */
     /* text-align: center; */
     display: flex;
@@ -16,7 +16,7 @@
     object-fit:cover;
     width: 130px;
     height: 100px;
-    animation: shuffleAnimation 3s ease-in-out infinite;
+    /* animation: shuffleAnimation 3s ease-in-out infinite; */
     
 }
 
@@ -66,7 +66,7 @@
 .contextH1{
     color: #2d5477;
     font-size: 14px;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .contextH1b{
@@ -79,7 +79,7 @@
 .learnMore{
     font-size: 14px;
     background-color: #2d5477;
-    width: 20%;
+    width: 20vw;
     font-weight: 500;
     color: #f1f5f8;
     padding: 5px;
@@ -95,4 +95,74 @@
 .contextDesc{
     font-size: 12px;
     width:80%;
+}
+
+@media screen and (min-width:700px) and (max-width: 900px){
+  .container{
+    height:50vh;
+    margin-top: 5%;
+  }
+
+  .contentTextHolder{
+    width: 50%;
+    padding-left: 20px;
+    right: 0;
+  }
+  .imageShuffleHolder{
+    width: 50%;
+    padding-right: 20px;
+    /* background-color: #2d5477; */
+  }
+  .contextMain{
+    font-size: 22px;
+    width: 70%;
+  }
+  .learnMore{
+    width: 60%;
+  }
+  
+}
+
+@media screen and (max-width:699px){
+  .container{
+    height:auto;
+    flex-direction: column;
+    margin-top: 10%;
+    
+  }
+
+  .contentTextHolder{
+    width: 90%;
+    padding-top: 15%;
+    padding-left: 5%;
+  }
+
+  .contextDesc{
+    width:90%;
+  }
+
+  .learnMore{
+    width: 90%;  
+  }
+
+  .imageShuffleHolder{
+    padding-top: 10%;
+    width: 90%;
+    height: 50vh;
+    margin-left: 0;
+  }
+  
+}
+
+/* @media screen and(min-width:901px) and (max-width: 1368px){
+  .container{
+    height: 75vh;
+  }
+
+} */
+
+@media screen and (max-width:320px){
+   .imageShuffleHolder{
+    height: 75vh;
+   }
 }

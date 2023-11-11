@@ -5,8 +5,7 @@
 }
 
 .carouselItem{
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 15%, rgba(0, 0, 0, 0));
    
 }
 
@@ -14,7 +13,9 @@
     object-fit: cover;
     width: 100vw;
     height: 80vh;
+    
 }
+
 
 .captionHolder{
     background: rgba(255, 255, 255, 0.34);
@@ -24,3 +25,6 @@
     -webkit-backdrop-filter: blur(9.5px);
     /* border: 1px solid rgba(255, 255, 255, 0.28) */
 }
+
+
+/* style={{ backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.9)15%, rgba(0,0,0,0)), ` }} */

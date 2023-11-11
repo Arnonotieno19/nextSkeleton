@@ -51,7 +51,7 @@ return (
     <div className={styles.container}>
       <div className={styles.contentTextHolder}>
         <h2 className={styles.contextH1}>We do better everyday</h2>
-        <h1 className={styles.contextMain}>Unlocking the next level in Telecom</h1>
+        <h1 className={styles.contextMain}>Unlocking the next level in Telecom.</h1>
         <p className={styles.contextDesc}>At Africom Media, we are a tech-driven organization 
            with an aim of using the right technology to explore, 
            and innovate new solutions in the dynamic world of mobile and web content. <br/> 

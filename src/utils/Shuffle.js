@@ -131,19 +131,3 @@ const ShuffleGrid = () => {
 export default ShuffleGrid;
 
 
-
-const squareStyle = {
-  width: '25%',
-  height: '25%',
-  display: 'inline-block',
-  margin: '0',
-  padding: '0',
-};
-
-const gridContainerStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(4, 1fr)',
-  gridTemplateRows: 'repeat(4, 1fr)',
-  height: '450px',
-  gap: '1rem',
-};

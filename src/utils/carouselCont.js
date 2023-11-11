@@ -10,14 +10,14 @@ export const carouselItems = [
     {
         name:'Value Added Services',
         // image: <Image src={banner1} alt='Africom Media ltd' className={styles.carouselImage}  />,
-        desc:'Transforming Communication for Better Connections.',
-        image:banner1,
+        desc:'Enhancing Value with Premium Services.',
+        image:banner2,
     },
     {
         name:'Communication',
         // image:<Image src={banner2} alt='Value Added Service' className={styles.carouselImage} />,
-        desc:'Enhancing Value with Premium Services.',
-        image:banner2,
+        desc:'Transforming Communication for Better Connections.',
+        image:banner1,
     },
     {
         name:'Payments',
@@ -28,7 +28,7 @@ export const carouselItems = [
     {
         name:'Branding/Printing',
         // image: <Image src={banner4} alt='Payment Services' className={styles.carouselImage} />,
-        desc:'This is the first carousel image',
+        desc:'Elevating Branding and Printing Solutions.',
         image:banner4,
     },
     {

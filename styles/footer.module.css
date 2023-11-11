@@ -19,9 +19,13 @@
     font-size: 20px;
 
 }
+.navItem:hover{
+    color: #00D3E3;
+    transform: scale(1.2)
+}
 
 .bgholder{
-     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/body.jpeg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/body.jpeg');
     width: 30%;
     height: 90%;
     padding-top: 10px;
@@ -37,7 +41,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px
+    gap:10px;
 
 }
 
@@ -46,14 +50,51 @@
     gap: 30px;
 }
 
+
 .socialIcon{
     font-size: 35px;
     color: #0e165c;
 }
 
+.socialIcon:hover{
+    color: #00D3E3;
+    transform: scale(1.2) rotate(-7deg);
+}
+
 .footerBottom a{
     text-decoration: none;
+    
 }
+
+@media screen  and (max-width:699px){
+    .container{
+        height: 25vh;
+        margin-top: 10%;
+    }
+
+    .footerTop{
+        gap: 10px;
+    }
+
+    .navItem{
+        font-size: 14px;
+    }
+
+    .socialIcon{
+        font-size: 25px;
+    }
+
+    .footerBottom {
+        font-size: 14px;   
+    }
+}
+
+@media screen and (max-width:320px){
+    .footerHolder {
+        gap:5px;
+    
+    }
+  }
 
 
 
