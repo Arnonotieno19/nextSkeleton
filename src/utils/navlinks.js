@@ -35,3 +35,34 @@ export const navlinks =
           },
     },
 ]
+
+
+export const navValues= [
+    {
+        id: 'home',
+        title: 'Home',
+        path: '/',
+        sport:'basketball'
+    },
+
+    {
+        id: 'simon',
+        title: 'simon',
+        path: '/',
+        sport:'basketball'
+    },
+    {
+        id: '.caleb',
+        title: 'caleb',
+        path: '/',
+        sport:'basketball'
+    },
+    {
+        id: 'oti',
+        title: 'Home',
+        path: '/',
+        sport:'basketball'
+    },
+    
+    
+]
