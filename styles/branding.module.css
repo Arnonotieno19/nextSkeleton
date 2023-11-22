@@ -1,0 +1,164 @@
+.container{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+}
+.modern{
+    font-size: 65px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    transform: rotate(270deg); 
+    margin-left:8.7%;
+    margin-bottom:0%;
+    margin-top: 4% ;
+
+}
+
+.irresistible{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    transform: rotate(0deg); 
+    margin-left: 0%;
+    margin-bottom:0%;
+    margin-top: 0% ;
+    /* background-color: yellow; */
+}
+
+.unique{
+    font-size: 75px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    transform: rotate(270deg); 
+    margin-left: -4.6%;
+    margin-bottom:4%;
+    margin-top: 0% ;
+    
+
+}
+
+.heroItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 100% ;
+    color: #fff;
+    line-height: 1;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/printing.jpg');
+
+}
+
+
+.titleHolder{
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: left;
+    margin-left: 14%;
+   
+
+}
+
+.cardsPrintingSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5%; */
+}
+
+.backGroundImage{
+    object-fit: cover;
+    width: 100%;
+    height: 15vh;
+
+}
+.imgCards{
+    width: 40%;
+    height: 20vh;
+    object-fit: contain;
+    /* background-color: yellow; */
+    /* background-color: blue; */
+}
+.bodyParagraph{
+    width: 50%;
+    /* background-color: yellow; */
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color:  #2d5477;
+}
+
+.cardsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 60%;
+    padding-top: 1%;
+    border-bottom: 5px solid #f1f5f8;
+    margin-bottom: 2%;
+    
+}
+
+.printHeader{
+    color: #2ed7da;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;
+
+}
+
+.bodyPrint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.largeFormat{
+    height: 15vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.4)), url('../src/assets/largeFormat.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spanText{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 30px;
+
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2)), url('../src/assets/bg4.jpg');
+}
+
+
+/* .cardsPrintingSection{
+    background-image: url('../src/assets/bg1.jpg');
+    height: 40vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+/* } */ 
+
+/* .cardsPrintingSection{
+    height: 40vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/printing.jpg');
+
+}  */

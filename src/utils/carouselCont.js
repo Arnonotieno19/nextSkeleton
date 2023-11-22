@@ -3,6 +3,8 @@ import banner2 from '../assets/vas.jpg'
 import banner4 from '../assets/printing.jpg'
 import banner3 from '../assets/payment.jpg'
 import banner5 from '../assets/eventsnew.jpg'
+import banner6 from '../assets/new1.jpg'
+import banner7 from '../assets/new1a.jpg'
 import Image from 'next/image';
 import styles from '../../styles/mainHero.module.css'
 
