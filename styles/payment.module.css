@@ -1,7 +1,7 @@
 .heroItems{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     height: 80vh;
     width: 100% ;
     color: #fff;
@@ -11,3 +11,80 @@
     background-position-y: center;
 
 }
+
+.contentHolder{
+    width: 35%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    background: rgba(31, 32, 32, 0.34);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(9.5px);
+    padding-left: 2%;
+    margin-top: 15%;
+    margin-left: 10%;  
+
+}
+
+.unique{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.irresistible{
+    width: 95%;
+    font-family:sans-serif;
+    line-height: 0.6cm;
+    font-size: 20px;
+    padding-top: 2%;
+    
+}
+
+.section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.innerSection{
+    display: flex;
+    background-color: yellow;
+    width: 90%;
+}
+
+.innerLeft{
+    background-color: indigo;
+    display: flex;
+}
+
+.itemsHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    height: 100px;
+    width: auto;
+}
+
+.innerRight{
+    background-color: orange;
+}
+
+
+
+/* .section{
+    background-image: url('../src/assets/creative/bg.jpg');
+    height:60vh;
+    margin-top: 5%;
+    width: 100%;
+    background-position-y: center;
+    background-size: cover;
+} */

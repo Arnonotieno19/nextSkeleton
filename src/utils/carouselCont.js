@@ -7,6 +7,11 @@ import banner6 from '../assets/new1.jpg'
 import banner7 from '../assets/new1a.jpg'
 import Image from 'next/image';
 import styles from '../../styles/mainHero.module.css'
+import icon from '../assets/creative/check_4505201.png'
+import icon2 from '../assets/creative/check_4505201.png'
+import icon3 from '../assets/creative/lock_8936903.png'
+import icon1 from '../assets/creative/reload_3325405.png'
+
 
 export const carouselItems = [
     {
@@ -40,3 +45,19 @@ export const carouselItems = [
         image:banner5,
     },
 ]
+
+export const icons = [
+    {
+        icon:icon1,
+        desc:'fast service'
+    },
+    {
+        icon:icon2,
+        desc:'easy to use'
+    },
+    {
+        icon:icon3,
+        desc:'secure'
+    },
+]
+
