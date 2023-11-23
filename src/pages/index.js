@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 
 const Homepage = () => {
   return (
-    <div>
+    <div style={{backgroundColor:''}}>
       <MainHero/>
       <HeroCreative/>
       <ServiceSection/>

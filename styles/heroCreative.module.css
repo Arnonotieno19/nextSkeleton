@@ -1,14 +1,14 @@
 .container{
     height: 370px;
-    /* background-color: orange; */
-    /* text-align: center; */
     display: flex;
     justify-content: center;
     /* border: 4px solid #f1f5f8; */
     border-top: 2px solid  #f1f5f8;
     border-bottom: 2px solid  #f1f5f8;
     margin-top: 2%;
+    margin-bottom: 2%;
     align-items: center;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 52%, rgba(10,51,106,1) 91%); */
     /* margin-top: 10px; */
 }
 
@@ -58,7 +58,6 @@
     height: 90%;
     display: flex;
     /* margin-top: 6%; */
-        
     /* flex-wrap: wrap; */
     gap:5px;
 
@@ -85,11 +84,13 @@
     padding: 5px;
     border-radius: 5px;
     text-align: center;
+    text-decoration: none;
 
 }
 
 .contextMain{
     font-size: 32px;
+    color: #2ed7da;
 }
 
 .contextDesc{

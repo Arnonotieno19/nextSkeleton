@@ -16,7 +16,7 @@ const ServiceSection = () => {
         {services.map((item, index)=>(
          
             <motion.div 
-              whileHover={{ scale: 0.95 , backgroundColor:'aqua', boxShadow: '0px 8px 16px 0px rgba(82, 241, 241, 0.2)'}}
+              whileHover={{ scale: 0.95 , backgroundColor:'#2d5477', boxShadow: '0px 8px 16px 0px rgba(82, 241, 241, 0.2)',  color: 'white',}}
               whileTap={{ scale: 1 }}
               ref={ref}
               transition={{ duration: 1.5, type: "spring" }}
@@ -30,9 +30,9 @@ const ServiceSection = () => {
                 <h3 className={styles.serviceHeader}>{item.name}</h3>
                 <p className={styles.serviceDesc}>{item.desc}</p>
               </div>
-              <span className={styles.clickMore}>
+              <h3 className={styles.clickMore}>
                 Read More
-              </span>
+              </h3>
             </motion.div>
         
         ))}

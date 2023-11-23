@@ -50,7 +50,7 @@ const HeroCreative = () => {
 return (
     <div className={styles.container}>
       <div className={styles.contentTextHolder}>
-        <h2 className={styles.contextH1}>We do better everyday</h2>
+        <h2 className={styles.contextH1}>We do better Everyday</h2>
         <h1 className={styles.contextMain}>Unlocking the next level in Telecom.</h1>
         <p className={styles.contextDesc}>At Africom Media, we are a tech-driven organization 
            with an aim of using the right technology to explore, 
@@ -62,22 +62,12 @@ return (
           <h2 className={styles.contextH1b}>Our Promise</h2>
           <p className={styles.contextDesc}>We promise to be your innovative brain with outstanding customer service and excellent value for money.</p>
         </div>
-
-        <span className={styles.learnMore}>Contact us</span>
+        <a className={styles.learnMore} href="/contact">
+        <span >Contact us</span></a>
       </div>
       <div className={styles.imageShuffleHolder}>
         <ShuffleGrid  />
       </div>
-      {/* <div className={styles.imageShuffleHolder}>
-        {creativeshuffle.map((item, id)=>(
-          <div
-           key={id}
-           className={styles.creativeImage}
-           style={{ backgroundImage: `url(${item.img})` , border:'dotted 1px red'}}
-          >
-          </div>
-          ))} 
-      </div> */}
     </div>
   )
 }
@@ -113,3 +103,15 @@ export default HeroCreative
   // >
 
   // </motion.div>
+
+
+  {/* <div className={styles.imageShuffleHolder}>
+        {creativeshuffle.map((item, id)=>(
+          <div
+           key={id}
+           className={styles.creativeImage}
+           style={{ backgroundImage: `url(${item.img})` , border:'dotted 1px red'}}
+          >
+          </div>
+          ))} 
+      </div> */}

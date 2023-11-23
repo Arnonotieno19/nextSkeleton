@@ -1,6 +1,10 @@
+"use client";
+
+
 // import { Inter } from 'next/font-inter'; 
 import Navbar from './Navbar';
 import Head from 'next/head';
+import { motion, AnimatePresence, delay } from "framer-motion"
 
 // const inter = Inter({ subsets: ['latin'] });
 
@@ -37,7 +41,15 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <AnimatePresence>
+        <motion.div 
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 15 }}
+            transition={{ delay: 0.5 }}
+          > <main>{children}</main>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }

@@ -3,6 +3,22 @@ import { motion } from "framer-motion";
 export const navlinks =
 [
     {
+        name:'Payment',
+        link:'/services/payment',
+        variants: {
+            hidden: { opacity: 0, y: -20 },
+            visible: { opacity: 1, y: 0 },
+          },
+    },
+    {
+        name:'VAS',
+        link:'/services/vas',
+        variants: {
+            hidden: { opacity: 0, y: -20 },
+            visible: { opacity: 1, y: 0 },
+          },
+    },
+    {
         name:'Branding',
         link:'/services/branding',
         variants: {
@@ -26,43 +42,5 @@ export const navlinks =
             visible: { opacity: 1, y: 0 },
           },
     },
-    {
-        name:'Payment Solutions',
-        link:'/services/payment',
-        variants: {
-            hidden: { opacity: 0, y: -20 },
-            visible: { opacity: 1, y: 0 },
-          },
-    },
-]
-
-
-export const navValues= [
-    {
-        id: 'home',
-        title: 'Home',
-        path: '/',
-        sport:'basketball'
-    },
-
-    {
-        id: 'simon',
-        title: 'simon',
-        path: '/',
-        sport:'basketball'
-    },
-    {
-        id: '.caleb',
-        title: 'caleb',
-        path: '/',
-        sport:'basketball'
-    },
-    {
-        id: 'oti',
-        title: 'Home',
-        path: '/',
-        sport:'basketball'
-    },
-    
     
 ]

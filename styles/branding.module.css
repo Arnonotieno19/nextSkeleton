@@ -121,12 +121,25 @@
 }
 
 .largeFormat{
-    height: 15vh;
+    height: 18vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.4)), url('../src/assets/largeFormat.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.largeFormat2{
+    height: 15vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.4)), url('../src/assets/r3.jpg');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +152,16 @@
 
 }
 
+.listItems{
+    text-align: center;
+    /* color: #2ed7da; */
+    color: #fff;
+    font-size: 19px;
+    font-family: sans-serif;
+    list-style-type: circle;
+    font-weight: bold;
+}
+
 .footer{
     height: 40vh;
     width: 100%;
@@ -146,6 +169,26 @@
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2)), url('../src/assets/bg4.jpg');
+}
+
+.contactButton{
+    background-color: #2ed7da;
+    color: #2d5477;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    margin-bottom:2% ;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contactButton:hover{
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+    background-color: #2d5477;
+    color: white;
 }
 
 

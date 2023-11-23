@@ -60,24 +60,24 @@
     /* color: #2ed7da; */
     color: #2ed7da;   
     font-size: 50px;
-    font-family: 'Anton', sans-serif;
-    font-weight: 500;
+    font-family: '', sans-serif;
+    font-weight: 600;
 }
 
 .header2{
     /* color: #2ed7da; */
     color: white;   
     font-size: 30px;
-    font-family: 'Anton', sans-serif;
-    font-weight: 500;
+    font-family: '', sans-serif;
+    font-weight: 600;
 }
 
 
 .spanHeader{
     color: #2d5477;   
     font-size: 42px; 
-    font-weight: 500;
-    font-family: 'Anton', sans-serif;
+    font-weight: 600;
+    font-family: '', sans-serif;
     
 }
 

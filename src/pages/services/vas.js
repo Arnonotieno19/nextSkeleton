@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from '../../../styles/payment.module.css'
+import styles from '../../../styles/vas.module.css'
 
-const payment = () => {
+const vas = () => {
   return (
     <div>
-      <div className={styles.heroItems}>
+        <div className={styles.heroItems}>
             <div className={styles.titleHolder}>
                  <h1 className={styles.unique}  style={{ color: "#cae9ff"}}>UNIQUE</h1>
             </div>
@@ -19,4 +19,4 @@ const payment = () => {
   )
 }
 
-export default payment
+export default vas

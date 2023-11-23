@@ -4,6 +4,7 @@ import Image from 'next/image'
 import bgImage from '../../assets/bg2.jpg'
 import image2 from '../../assets/t2.png'
 import image3 from '../../assets/creative/11.jpg'
+import image4 from '../../assets/r3.jpg'
 
 const branding = () => {
   return (
@@ -31,6 +32,11 @@ const branding = () => {
           </div>
           <div className={styles.largeFormat}>
                <h1 className={styles.spanText}>Large format branding</h1>
+               <ul className={styles.listItems}>
+                    <li>Wall branding</li>
+                    <li>Vehicle branding</li>
+                    <li>canva & many more!!</li>
+               </ul>
           </div>
 
           <div className={styles.cardsContent}>
@@ -40,6 +46,14 @@ const branding = () => {
                     Transform your brand presence with impactful visuals. From eye-catching wall and vehicle branding to attention-grabbing banners and larger-than-life formats, we turn your ideas into stunning realities. Elevate your visibility, captivate your audience, and make a bold statement with our expert branding solutions.
                     </p>
                </div>
+          </div>
+
+          <div className={styles.largeFormat2}>
+               <h1 className={styles.spanText}>Also get gadgets & textile branding</h1>
+          </div>
+
+          <div className={styles.cardsContent}>
+               <a href='/contact' className={styles.contactButton}> Get Started</a>
           </div>
 
           {/* <div className={styles.footer}>

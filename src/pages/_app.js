@@ -3,13 +3,14 @@ import Layout from '../components/layout';
 import { Fragment } from 'react';
 
 
+
 function MyApp({ Component, pageProps }) {
   return (
-    <Fragment>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </Fragment>
+        <Fragment>
+          <Layout>
+              <Component {...pageProps} />
+          </Layout>
+        </Fragment>
   );
 }
 

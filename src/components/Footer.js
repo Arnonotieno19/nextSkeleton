@@ -21,8 +21,8 @@ const Footer = () => {
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaTwitter className={styles.socialIcon}/></a>
             </div>
             <div className={styles.footerBottom}>
-                <a href="mailto:info@africomltd.com?subject=Service Inquiry&body=Hi! I am interested in knowing more about your services. Please call me back" rel="noreferrer" target="_blank" title="Send us mail">info@africomltd.com</a> | +254716000005 <br />
-                        © {date} Africom Media. All right reserved
+                <a href="mailto:info@africomltd.com?subject=Service Inquiry&body=Hi! I am interested in knowing more about your services. Please call me back" rel="noreferrer" target="_blank" title="Send us mail"  >info@africomltd.com</a> <a >| +254716000005 <br /></a>
+                       <span> © {date} Africom Media. All right reserved </span>
             </div>
         </div>       
     </div>

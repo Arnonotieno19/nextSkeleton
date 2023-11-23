@@ -1,0 +1,13 @@
+.heroItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 100% ;
+    color: #fff;
+    line-height: 1;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/payment.jpg');
+    background-position-y: center;
+
+}
