@@ -2,6 +2,9 @@ import React from 'react'
 import styles from '../../../styles/payment.module.css'
 import {icons} from '../../utils/carouselCont'
 import Image from 'next/image'
+import pc from '../../assets/creative/a.png'
+import mobile from '../../assets/creative/b.png'
+import pay from '../../assets/payco.jpg'
 
 const payment = () => {
   return (
@@ -29,9 +32,22 @@ const payment = () => {
                          </div>
                     ))}
                </div>
-               <div className={styles.innerRight}></div> 
+               <div className={styles.innerRight}>
+                     <h1 className={styles.unique2}  style={{ color: "#2d5477"}}>We offer customized payment solutions for all businesses to accept online, mobile or in-store payments.</h1>
+                     <p className={styles.description}>Join our global partners in using our payment gateway that allows your billing model to leverage M-Pesa payment for your Kenyan customers or audience.</p>
+               </div> 
           </div>
-
+        </div>
+        <div className={styles.secondSection}>
+          <div className={styles.ssinner}>
+               <div className={styles.secondSectionDesc}>
+                    <h1 className={styles.unique3} >Make your payment journey fast, easy, and transparent </h1>
+                    <a className={styles.button} href='/contact'>Join Us Today!</a>
+               </div>
+               <div className={styles.imageHolder}>
+               </div>
+          </div>
+          
         </div>
     </div>
   )

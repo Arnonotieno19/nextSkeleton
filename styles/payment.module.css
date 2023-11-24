@@ -35,6 +35,44 @@
     font-weight: bold;
 }
 
+.unique2{
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.unique3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d5477;
+    /* text-align: right; */
+}
+.description{
+    padding-top: 5px;
+    
+}
+
+.button{
+    border: #eaf0f6 solid 1px;
+    width: 40%;
+    text-align: center;
+    background-color:#2d5477;
+    color:white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    background-color: aqua;
+    color: #2d5477;
+    scale: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
 .irresistible{
     width: 95%;
     font-family:sans-serif;
@@ -45,39 +83,131 @@
 }
 
 .section{
-    height: auto;
+    height: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+
 
 }
 
 .innerSection{
     display: flex;
-    background-color: yellow;
-    width: 90%;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    /* background-color: yellow; */
+    width: 60%;
+  
+    
 }
 
 .innerLeft{
-    background-color: indigo;
     display: flex;
+    /* gap: 15%; */
+    width: 40%;
+    justify-content: space-around;
+    border-bottom: 5px solid #eaf0f6;
+    /* background-color: #2d5477; */
 }
 
 .itemsHolder{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .icon{
-    height: 100px;
+    height: 80px;
     width: auto;
 }
 
 .innerRight{
-    background-color: orange;
+    width: 45%;
 }
 
+.productDesc{
+    font-weight: 500;
+    width: 60%;
+    padding-top: 5px;
+    line-height: 1;
+    color: #2d5477;
+    font-size: 20px;
+}
+
+.secondSection{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+   
+}
+
+.ssinner{
+    width: 60%;
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.imagesDevice{
+    display: flex;
+}
+
+.mobile{
+    width: auto;
+    height: 100px;
+}
+
+.laptop{
+    width: 250px;
+    height: auto;
+}
+
+.secondSectionDesc{
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 5px solid #eaf0f6; */
+    width: 40%;
+    
+   
+    
+}
+
+.imageHolder{
+    background-image: url('../src/assets/payco.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    border: solid #eaf0f6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 35%;
+    height: 40vh;
+
+    
+}
+
+.payImages{
+
+}
+
+
+
+
+
+.try{
+    /* background-color: green; */
+    height: 40vh;
+    background-image: url('../src/assets/creative/bg.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
 
 
 /* .section{

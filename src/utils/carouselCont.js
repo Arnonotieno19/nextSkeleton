@@ -8,7 +8,7 @@ import banner7 from '../assets/new1a.jpg'
 import Image from 'next/image';
 import styles from '../../styles/mainHero.module.css'
 import icon from '../assets/creative/check_4505201.png'
-import icon2 from '../assets/creative/check_4505201.png'
+import icon2 from '../assets/creative/check_6338861.png'
 import icon3 from '../assets/creative/lock_8936903.png'
 import icon1 from '../assets/creative/reload_3325405.png'
 
