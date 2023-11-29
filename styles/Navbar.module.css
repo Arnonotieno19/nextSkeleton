@@ -130,6 +130,29 @@
       width: 30px;
       height: 28px;
       color: #00d2d1;
+      cursor: pointer;
+    }
+    .menu:hover{
+      cursor: pointer;
+    }
+
+    .logoImage{
+      height: 50px;
+    }
+
+    .mobileMenu{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      margin-top: 15px;
+      z-index: 1;  
+      gap: 1px; 
+      width: 100vw;
+      left: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
         
   }

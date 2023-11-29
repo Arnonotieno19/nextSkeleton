@@ -18,7 +18,7 @@
 
 
 .captionHolder{
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(116, 113, 113, 0.34);
     /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.5px);
@@ -27,4 +27,19 @@
 }
 
 
+
+
 /* style={{ backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.9)15%, rgba(0,0,0,0)), ` }} */
+
+@media screen and (max-width:450px) {
+   .carousel{
+        height: 60vh ;
+   } 
+
+   .carouselImage{
+        height: 60vh;
+   }
+
+   
+
+}

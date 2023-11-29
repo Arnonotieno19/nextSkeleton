@@ -6,6 +6,7 @@ import logo from '../assets/africomlogo.png'
 import { motion } from 'framer-motion';
 import {HiOutlineMenuAlt1} from  'react-icons/hi'
 import {navlinks} from  '../utils/navlinks'
+import {FiXCircle} from 'react-icons/fi'
 
 
 import { MotionProps, Variants } from "framer-motion";
@@ -18,8 +19,9 @@ import {
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [openMenu, setOpenMenu] = useState(false);
-  const [isSmallscreen, setIsSmallScreen] = useState(false)
+  const [mobileNav, setMobileNave] = useState(false);
+  // const [isSmallscreen, setIsSmallScreen] = useState(false)
+
 
   const menu = {
     closed: {
@@ -39,13 +41,15 @@ const Navbar = () => {
     },
   };
   
-  const item = {
+  const itemMain = {
     variants: {
       closed: { x: -16, opacity: 0 },
       open: { x: 0, opacity: 1 },
     },
     transition: { opacity: { duration: 0.2 } },
   };
+
+ 
 
   const [windowWidth, setWindowWidth] = useState(0);
   // console.log(JSON.stringify(navlinks))
@@ -60,6 +64,8 @@ const Navbar = () => {
           window.removeEventListener('resize', handleResize);
         };
       }, []); 
+
+  const handleMobileNav =()=> (setMobileNave(!mobileNav));
   
   return (
     <div className={styles.container}>
@@ -68,8 +74,30 @@ const Navbar = () => {
       </div>
       {windowWidth <= 500 ? 
         (
-          <div className={styles.menuHolder}>
-              <HiOutlineMenuAlt1 className={styles.menu}/>
+          <div className={styles.menuHolder} onClick={handleMobileNav}>
+            {!mobileNav?( <HiOutlineMenuAlt1 className={styles.menu}/>):(
+              <div>
+                <FiXCircle className={styles.menu} />
+                <div className={styles.mobileNav}>
+                    <motion.div
+                      className={styles.mobileMenu}
+                      initial="closed"
+                      animate="open"
+                      exit="closed"
+                      variants={itemMain.variants}
+                      transition={itemMain.transition}
+                    >
+                        {navlinks.map((item, index) => (
+                        <motion.div key={index} className={styles.submenuItem} variants={item.variants}>
+                          <Link href={item.link} className={styles.submenLink}>{item.name}</Link>
+                        </motion.div>
+                      ))}
+                    
+                    </motion.div>
+
+                </div>
+              </div>
+            )}
           </div>
         ):(
           <div className={styles.navbarContainer}>
@@ -77,9 +105,6 @@ const Navbar = () => {
               <li className={styles.navItem}>
               <Link className={styles.navElement} href="/">Home</Link>
             </li>
-            {/* <li className={styles.navItem}>
-              <Link className={styles.navElement} href="/about">About</Link>
-            </li> */}
             <li className={styles.navItem}>
               <div
                 className={styles.navElement}
