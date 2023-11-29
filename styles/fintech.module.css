@@ -1,12 +1,13 @@
 /* Fintech.css */
 
 .bottomcontainer {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/body.jpeg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/creative/mobilebg.jpg');
     height: calc(55vh - 80px);
     padding: 0 15%;
     margin-top: 2%;
+    background-position: center;
+    background-size: cover;
   
-   
   }
   
   .bottomcontent {
@@ -16,7 +17,6 @@
   .bottomitems {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     align-items: center;
     height: 100%;

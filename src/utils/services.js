@@ -9,6 +9,11 @@ import icon8 from '../assets/seo.png'
 import icon9 from '../assets/high-value.png'
 import icon10 from '../assets/conversation.png'
 
+import br1 from '../assets/creative/clIco.png'
+import br2 from '../assets/creative/brandIco.png'
+import br3 from '../assets/creative/gadgetIco.png'
+import br4 from '../assets/creative/bronch2.png'
+
 export const services = [
     {
         name:'Payment Gateway',
@@ -46,5 +51,29 @@ export const services = [
         desc:'We deliver cutting-edge event solutions for memorable and impactful experiences.',
         link:'#'
     },
+
+]
+
+
+export const brandingServices = [
+    {
+        name:'Paper Printing',
+        image:br1,
+        desc:' Crafting Impressions with Folders, Business Cards, Flyers, Stickers, and many more. Where Design Meets Print Perfection!'
+    },{
+        name:'Large Format',
+        image:br2,
+        desc:'Embark on a Journey of Brand Brilliance. From Fluttering Flags to Vibrant Canvases, Artistic wallpapers, and creative branding. We are Your Partner in Bringing Your Brand to Life!'
+    },
+    // },{
+    //     name:'Bi-fold Printing',
+    //     image:br4,
+    //     desc:''
+    // },
+    {
+        name:'Gadget Branding',
+        image:br3,
+        desc:'Dress Your Brand in Style. Find quality in our Textiles, Flash Drives, Mugs, Gondolas brandings. We Print Your Product Information with Flair'
+    }
 
 ]

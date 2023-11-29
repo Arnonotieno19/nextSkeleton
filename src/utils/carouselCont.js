@@ -12,6 +12,16 @@ import icon2 from '../assets/creative/check_6338861.png'
 import icon3 from '../assets/creative/lock_8936903.png'
 import icon1 from '../assets/creative/reload_3325405.png'
 
+import iconVas1 from '../assets/creative/pad3d.png'
+import iconVas2 from '../assets/creative/music.png'
+import iconVas3 from '../assets/creative/caller.png'
+
+import vasImage1 from '../assets/creative/gamebg.jpg'
+import vasImage2 from '../assets/creative/multimedia.jpg'
+import vasImage3 from '../assets/creative/skizabg.jpg'
+
+
+
 
 export const carouselItems = [
     {
@@ -59,5 +69,22 @@ export const icons = [
         icon:icon3,
         desc:'secure'
     },
+]
+
+
+export const VASitems = [
+    {
+        title:'Caller Ring Back Tone (CRBT)',
+        icon: iconVas3,
+        imageBg:vasImage3
+    },{
+        title:'Gaming Platform',
+        icon:iconVas1,
+        imageBg:vasImage1
+    },{
+        title:'Multimedia Delivery and billing.',
+        icon:iconVas2,
+        imageBg:vasImage2
+    }
 ]
 

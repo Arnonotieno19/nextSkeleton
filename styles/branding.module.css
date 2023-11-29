@@ -3,6 +3,248 @@
     height: 100%;
     width: 100%;
 }
+
+.heroItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 80vh;
+    width: 100% ;
+    color: #fff;
+    line-height: 1;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/newbr.png');
+    background-position: center;
+    background-size: cover;
+    /* background-position-x: right; */
+
+}
+
+.spanHolder{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 5px;
+}
+
+.unique{
+    font-size: 75px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    color: aqua;
+    /* transform: rotate(270deg); 
+    margin-left: -4.6%;
+    margin-bottom:4%;
+    margin-top: 0% ; */
+}
+
+.button{
+    border: 1px white solid;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.cardsPrintingSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.cardContainer{
+    width: 70%;
+    /* background-color: #2ed7da; */
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+.cardItem{
+    display: flex;
+    gap: 2%;
+    /* background-color: #2ed7da; */
+    width: 100%;
+}
+
+.cardInner{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 190px;
+    /* background-color: #2d5477; */
+    gap: 0;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.cardDesc{
+    /* background-color: #2ed7da; */
+    display: flex;
+    align-items: center;
+}
+
+.brandHeader{
+    font-size: 30px;
+    font-family: 'anton';
+    letter-spacing: 2px;
+    color:#2d5477;
+}
+
+.HeaderDesc{
+    font-size: 20px;
+    font-family: 'anton';
+    color: #2ed7da;
+}
+
+.brandingImage{
+    height: 50vh;
+    width:25vw;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../src/assets/branding.jpg');
+}
+
+.imageIcon{
+    height: 70px;
+    width: auto;
+}
+
+.cardTitle{
+    font-weight: 600;
+    color: #2d5477;
+}
+
+.description{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.buttonOther{
+    color: #2d5477;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 200px;
+    justify-content: center;
+    margin-top: 25px;
+    border: 1px solid #2d5477;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+
+}
+
+.buttonOther:hover{
+    scale: 0.9;
+    transition: ease-in-out 0.2s;  
+}
+
+.sectionInner{
+    display: flex;
+    margin-top: 25px;
+    width: 80%;   
+    gap:25px;
+    margin-bottom: 15%;
+    
+    
+}
+
+.slogan{
+    font-family: 'anton';
+    color: #2d5477;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 15%;
+    width: 60%;
+}
+
+.section2{
+    /* width: 100%; */
+    margin-bottom: 5%;
+}
+
+.image2{
+    height: 40%;
+    width: 30%;
+    margin-top: 12%;
+    margin-left: 30%;
+    position: absolute;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modern{
     font-size: 65px;
     font-family: 'Anton', sans-serif;
@@ -25,30 +267,20 @@
     /* background-color: yellow; */
 }
 
-.unique{
-    font-size: 75px;
-    font-family: 'Anton', sans-serif;
-    letter-spacing: 5px;
-    transform: rotate(270deg); 
-    margin-left: -4.6%;
-    margin-bottom:4%;
-    margin-top: 0% ;
+
+
+.button:hover{
+    background-color: aqua;
+    color:#2d5477;
+    border: aqua;
+    scale: 0.9;
+    transition: ease-in-out 0.2s;
     
-
 }
 
-.heroItems{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    width: 100% ;
-    color: #fff;
-    line-height: 1;
-    margin-right: auto;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/printing.jpg');
 
-}
+
+
 
 
 .titleHolder{
@@ -62,13 +294,7 @@
 
 }
 
-.cardsPrintingSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 5%; */
-}
+
 
 .backGroundImage{
     object-fit: cover;
@@ -148,7 +374,7 @@
 .spanText{
     font-family: 'Anton', sans-serif;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
 
 }
 
@@ -168,7 +394,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2)), url('../src/assets/bg4.jpg');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2)), url('../src/assets/newbr.png');
 }
 
 .contactButton{

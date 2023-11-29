@@ -98,7 +98,7 @@ const Navbar = () => {
                 >
                     {navlinks.map((item, index) => (
                     <motion.div key={index} className={styles.submenuItem} variants={item.variants}>
-                      <a href={item.link} className={styles.submenLink}>{item.name}</a>
+                      <Link href={item.link} className={styles.submenLink}>{item.name}</Link>
                     </motion.div>
                   ))}
                 
