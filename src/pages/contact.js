@@ -50,7 +50,7 @@ const contact = () => {
                       name="phone"
                       minLength="9"
                       pattern="[0-9]*"
-                      placeholder="+254700000000  (9+ digit)"
+                      placeholder="+254700000000 (9+ digit)"
                       color='#2d5477'
                       required
                       className={styles.formInputs}

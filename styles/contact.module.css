@@ -205,3 +205,86 @@
 
 }
 
+@media screen and (max-width:450px) {
+
+    .container{
+        height: 100%;
+    }
+    .body{
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .sectionInner{
+        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .leftSection{
+        width: 90%;
+    }
+
+    .header1{
+        font-size: 20px;
+    }
+
+    .spanHeader{
+        font-size: 14px;
+    }
+
+    .inputsHolder{
+        gap: 5px;
+    }
+
+    .formInputs{
+        width: 47%;
+        padding: 5px 5px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .formInputsSubject{
+        border-radius: 5px;
+        width: 95%;
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+
+    .textArea{
+        border-radius: 5px;
+        width: 95%;
+        font-size: 14px;
+        padding: 5px 5px;
+    }
+
+    .submitButton{
+        border-radius: 10px;
+        margin-top: 5px;
+        padding: 5px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .rightSection{
+        width: 90%;
+        margin-bottom: 20px;
+        
+    }
+
+    .header2{
+        font-size: 14px;
+    }
+
+    .header3{
+        font-size: 14px;
+    }
+
+    .icon{
+        height: 30px;
+        width: 12%;
+    }
+
+}
+
