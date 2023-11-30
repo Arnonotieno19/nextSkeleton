@@ -29,6 +29,7 @@
     font-size: 80px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
+    text-align: center;
 
   }
 
@@ -38,7 +39,7 @@
     display: inline-block;
     font-style: italic;
     font-family: 'Anton', sans-serif;
-    filter: blur(8px);
+  
   }
   
   .bottomp {
