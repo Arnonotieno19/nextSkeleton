@@ -1,6 +1,6 @@
 import banner1 from '../assets/heroFinal2reduced.jpg';
 import banner2 from '../assets/vas.jpg'
-import banner4 from '../assets/printing.jpg'
+import banner4 from '../assets/newbr.png'
 import banner3 from '../assets/payment.jpg'
 import banner5 from '../assets/eventsnew.jpg'
 import banner6 from '../assets/new1.jpg'
