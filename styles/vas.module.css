@@ -138,3 +138,150 @@
     text-decoration: none;
     color: #fff;
 }
+
+
+
+@media screen and (max-width:450px) {
+    .heroItems{
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+    
+
+    .contentHolder{
+        width: 80%;
+        height: 55%;
+        max-height:250px ;
+       
+    }
+
+    .unique{
+        font-size: 20px;
+    }
+
+    .irresistible{
+        font-size: 14px;
+    }
+
+    .vasBody{
+        height: auto;
+    }
+
+    .vasContent{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .card{
+        width: 80%;
+        height: 200px;
+    }
+
+    .vasExtra{
+        width: 80%;
+        padding-top: 5%;
+        margin-bottom: 20px;
+    }
+
+    .innerParagraph{
+        font-size: 12px;
+    }
+
+    .contactus{
+        width: 50%;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .cardTitle{
+        font-size: 14px;
+    }
+
+    .imageHolder{
+        height: 50px;
+        width: 50px;
+    }
+
+    .imageIcon{
+        height: 40px;
+    }
+
+   
+}
+
+
+@media screen and (min-width:550px) and (max-width:850px) {
+
+    .heroItems{
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    .contentHolder{
+        width: 55%;
+        height: 35%;
+        max-height: 300px ;
+       
+    }
+
+    .unique{
+        font-size: 35px;
+    }
+
+
+    .vasBody{
+        height: fit-content;
+        padding-top: 20px;
+    }
+
+    .vasContent{
+        width: 95%;
+    }
+
+    .card{
+        height: 200px;
+        width: 31%;
+    }
+
+    .vasContent{
+        /* background-color: #2d5477; */
+    }
+
+    .vasExtra{
+        width: 95%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactus{
+        margin-bottom: 20px;
+    }
+
+    .innerParagraph{
+        text-align: center;
+    }
+
+    .cardTitle{
+        font-size: 14px;
+    }
+
+    /* .vasBody{
+        background-image: url('../src/assets/creative/br23.jpg');
+        background-size: cover;
+        background-position: center;
+    } */
+
+
+
+
+
+}

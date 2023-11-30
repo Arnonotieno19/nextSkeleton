@@ -174,6 +174,7 @@
     letter-spacing: 2px;
     margin-top: 15%;
     width: 60%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section2{
@@ -431,3 +432,127 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0.1)), url('../src/assets/printing.jpg');
 
 }  */
+
+
+
+
+@media screen and (max-width:450px) {
+    .heroItems{
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+    
+
+    .contentHolder{
+        width: 80%;
+        height: 55%;
+       
+    }
+
+    .unique{
+        font-size: 35px;
+        text-align: center;
+        width: 85%;
+    }
+
+    .irresistible{
+        font-size: 14px;
+    }
+
+    .spanHolder{
+        gap: 5px;
+    }
+
+    .spanText{
+        font-size: 25px;
+    }
+
+    .cardsPrintingSection{
+        height: auto;
+    }
+
+    .cardContainer{
+        width: 85%;
+    }
+
+    .cardItem{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HeaderDesc{
+        /* width: 95%; */
+        text-align: center;
+    }
+
+    .cardInner{
+        width: 100%;
+    }
+
+    .sectionInner{
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: 95vh;
+    }
+
+    .brandingImage{
+        height: 270px;
+        width: 80%;
+    }
+
+    .image2{
+        width: auto;
+        height: 25%;
+        margin-left: 12%;
+        margin-top: 68vh;
+        
+
+    }
+
+}
+
+
+@media screen and (min-width:550px) and (max-width:850px) {
+    .unique{
+        text-align: center;
+        line-height: 2cm;
+    }
+
+    .cardContainer{
+        width: 95%;
+    }
+
+    .cardsPrintingSection{
+        height: 100vh;
+        /* background-image: url('../src/assets/creative/bgd.jpg');
+        background-size:cover ;
+        background-position-x: center; */
+    }
+
+    .cardInner{
+        height: 220px;
+    }
+
+    .sectionInner{
+
+        width: 100%;
+    }
+
+    .brandingImage{
+        width: 75%;
+        height: 40vh;
+    }
+
+    .image2{
+        width: auto;
+        height: 35%;
+        margin-top: 35%;
+
+    }
+
+
+
+}

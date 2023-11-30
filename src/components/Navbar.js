@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import {HiOutlineMenuAlt1} from  'react-icons/hi'
 import {navlinks} from  '../utils/navlinks'
 import {FiXCircle} from 'react-icons/fi'
+import {navlinksMobile} from  '../utils/navlinks'
 
 
 import { MotionProps, Variants } from "framer-motion";
@@ -66,6 +67,10 @@ const Navbar = () => {
       }, []); 
 
   const handleMobileNav =()=> (setMobileNave(!mobileNav));
+  const itemMainVariants = {
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: -20 },
+  };
   
   return (
     <div className={styles.container}>
@@ -84,10 +89,10 @@ const Navbar = () => {
                       initial="closed"
                       animate="open"
                       exit="closed"
-                      variants={itemMain.variants}
+                      variants={itemMainVariants}
                       transition={itemMain.transition}
                     >
-                        {navlinks.map((item, index) => (
+                        {navlinksMobile.map((item, index) => (
                         <motion.div key={index} className={styles.submenuItem} variants={item.variants}>
                           <Link href={item.link} className={styles.submenLink}>{item.name}</Link>
                         </motion.div>
@@ -118,12 +123,12 @@ const Navbar = () => {
                   initial="closed"
                   animate="open"
                   exit="closed"
-                  variants={item.variants}
-                  transition={item.transition}
+                  variants={itemMain.variants}
+                  transition={itemMain.transition}
                 >
                     {navlinks.map((item, index) => (
                     <motion.div key={index} className={styles.submenuItem} variants={item.variants}>
-                      <Link href={item.link} className={styles.submenLink}>{item.name}</Link>
+                      <Link href={item.link}  onClick={() => setOpen(false)} className={styles.submenLink}>{item.name}</Link>
                     </motion.div>
                   ))}
                 

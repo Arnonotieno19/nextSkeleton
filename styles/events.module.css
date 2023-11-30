@@ -59,8 +59,61 @@
 }
 
 .modern{
-    
-    
-   
-    margin-top: 10px;
+   margin-top: 10px;
 }
+
+
+
+
+@media screen and (max-width:450px) {
+    .heroItems{
+        display: flex;
+        justify-content: center;
+        height: 95vh;
+        background-position: center;
+        background-size: cover;
+        padding-top: 10%;
+    
+    }
+    
+
+    .contentHolder{
+        width: 90%;
+        height: 60%;
+        max-height:350px ;
+        padding-left: 15px;
+        margin-left: 5%;
+       
+       
+    }
+
+    .unique{
+        font-size: 22px;
+    }
+
+    .irresistible{
+        font-size: 14px;
+    }
+
+    .bookus{
+        width: 45%;
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (min-width:550px) and (max-width:850px) {
+    .contentHolder{
+        width: 70%;
+        height: 55%;
+        max-height: 370px;
+        padding-left: 15px;
+       
+    }
+
+    .heroItems{
+        align-items: center;
+    }
+}
+

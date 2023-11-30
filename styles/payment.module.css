@@ -12,6 +12,7 @@
 
 }
 
+
 .contentHolder{
     width: 35%;
     height: 45%;
@@ -57,6 +58,7 @@
     width: 40%;
     text-align: center;
     background-color:#2d5477;
+    text-decoration: none;
     color:white;
     font-weight: 600;
     border-radius: 10px;
@@ -196,10 +198,6 @@
 
 }
 
-
-
-
-
 .try{
     /* background-color: green; */
     height: 40vh;
@@ -218,3 +216,190 @@
     background-position-y: center;
     background-size: cover;
 } */
+
+
+@media screen and (max-width:450px) {
+    .heroItems{
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+    
+
+    .contentHolder{
+        width: 80%;
+        height: 55%;
+        max-height:250px ;
+       
+    }
+
+    .unique{
+        font-size: 20px;
+    }
+
+    .irresistible{
+        font-size: 14px;
+    }
+
+    .section{
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .innerSection{
+        flex-direction: column;
+        width: 80%;
+        /* background-color: #2d5477; */
+    }
+
+    .innerLeft{
+        width: 100%;
+        justify-content: space-around;
+        /* background-color: #2d5477; */
+
+    }
+
+    .itemsHolder{
+        /* background-color: #2d5477; */
+        padding-bottom: 10px;
+    }
+
+    .icon{
+        height: 40px;
+    }
+
+    .productDesc{
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .innerRight{
+        width: 100%;
+        padding-top: 10px;
+        /* background-color: #2d5477; */
+    }
+
+    .secondSection{
+        height: auto;
+        
+    }
+
+    .description{
+        font-size: 14px;
+    }
+
+    .secondSectionDesc{
+        width: 60%;
+        /* background-color: aqua; */
+    }
+
+    .unique3{
+        font-size: 16px;
+    }
+
+    .button{
+        width: 120px;
+        border-radius: 5px;
+        font-size: 12px;
+        z-index: 999;
+       
+    }
+
+    .imageHolder{
+        width: 80%;
+        height: 250px;
+    }
+    .ssinner{
+        /* background-color: #2d5477; */
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (min-width:550px) and (max-width:850px) {
+
+    .heroItems{
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    .contentHolder{
+        width: 70%;
+        height: 50%;
+        /* max-height:250px ; */
+       
+    }
+
+    .unique{
+        font-size: 35px;
+    }
+
+    .section{
+        height: auto;
+        margin-top: 15px;
+        
+    }
+
+    .innerSection{
+        width: 90%;
+    }
+
+    .innerLeft{
+        width: 40%;
+        justify-content: space-around;
+        height: 120px;
+        /* background-color: #2d5477; */
+
+    }
+
+    .icon{
+        height: 60px;
+    }
+
+    .productDesc{
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .innerRight{
+        /* background-color: #2d5477; */
+        height: 250px;
+        width: 50%;
+    }
+
+    .secondSection{
+        background-image: url('../src/assets/bg4.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+    }
+
+    .ssinner{
+        /* background-color: #2d5477; */
+        width: 90%;
+    }
+
+    .secondSectionDesc{
+        width: 50%;
+    }
+
+    .imageHolder{
+        width: 50%;
+        height: 300px;
+        background-size: cover;
+    }
+
+    .button{
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    
+    
+
+
+}

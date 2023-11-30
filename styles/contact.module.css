@@ -208,11 +208,13 @@
 @media screen and (max-width:450px) {
 
     .container{
-        height: 100%;
+        height: auto;
+        padding-bottom: 20px;
     }
     .body{
         background-size: cover;
         background-position: center;
+        
         
     }
 
@@ -269,7 +271,9 @@
 
     .rightSection{
         width: 90%;
-        margin-bottom: 20px;
+        height: max-content;
+        padding-bottom: 20px;
+        /* margin-bottom: 20px; */
         
     }
 
@@ -288,3 +292,71 @@
 
 }
 
+
+@media screen and (min-width:550px) and (max-width:850px) {
+    .body{
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .sectionInner{
+        width: 95%;
+    }
+
+    .leftSection{
+        width: 55%;
+    }
+    .rightSection{
+        width: 40%;
+    }
+
+    .header1{
+        font-size: 30px;
+    }
+    
+    .header3
+    .header2{
+        font-size: 20px;
+    }
+
+    .spanHeader{
+        font-size: 25px;
+    }
+
+    .inputsHolder{
+        gap: 5px;
+    }
+
+    .formInputs{
+        width: 47%;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .formInputsSubject{
+        border-radius: 5px;
+        width: 95%;
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    .textArea{
+        border-radius: 5px;
+        width: 95%;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .icon{
+        height: 40px;
+        width: 20%;
+    }
+
+    
+
+
+    
+
+}
