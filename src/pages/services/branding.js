@@ -19,7 +19,7 @@ const branding = () => {
                <span className={styles.spanText}>IRRESISTIBLE</span>
           </div>
           <p className={styles.unique}>CRAFTING BRILLIANCE, ONE PRINT AT A TIME.</p>  
-          <a href='/contact' className={styles.button}>Get Started Now!</a>                    
+          <a href='/contact'  style={{textDecoration:'none'}} className={styles.button}>Get Started Now!</a>                    
         </div>
         <div className={styles.cardsPrintingSection}>
           <div className={styles.cardContainer}>
@@ -37,7 +37,7 @@ const branding = () => {
                </div> 
 
                <div className={styles.buttonOther}>
-                         <a href='/contact'>Find out more</a>
+                         <a  style={{textDecoration:'none'}}href='/contact'>Find out more</a>
                          <IoMdArrowForward fontSize={18} color='#2d5477'/>
                </div> 
                <div className={styles.sectionInner}>
